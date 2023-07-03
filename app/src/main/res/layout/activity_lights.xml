@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#092E49"
+    tools:context=".Lights">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Φωτισμός"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_logo" />
+
+    <ImageView
+        android:id="@+id/home_logo"
+        android:layout_width="219dp"
+        android:layout_height="181dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cosmote_smart_home_3" />
+
+    <TextView
+        android:id="@+id/textAllLights"
+        android:layout_width="143dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/all_lights"
+        android:text=" Όλα τα φώτα"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:thumb="@drawable/switch_thumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:track="@drawable/switch_track" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageMeow"-->
+    <!--        android:layout_width="250dp"-->
+    <!--        android:layout_height="250dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:src="@drawable/light_off"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.496"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.727"/>-->
+
+    <ImageButton
+    android:id="@+id/radioBackButton"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@null"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/gobackarrow" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/question_mark" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Δωμάτια"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAllLights" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="413dp"
+        android:layout_height="57dp"
+        android:background="@drawable/navigation_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/micImageButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@color/roz"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <ImageButton
+        android:id="@+id/settingsImageButton"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/micImageButton"
+        app:srcCompat="@drawable/settings" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="60dp"
+        android:text="Ρυθμίσεις"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toEndOf="@+id/micImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/settingsImageButton" />
+
+    <ImageButton
+        android:id="@+id/imageView6"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="5dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/micImageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:srcCompat="@drawable/home" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Αρχική"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/micImageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+
+    <!--                      Living room                               -->
+
+    <ImageButton
+        android:id="@+id/livingRButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/room_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/livingRSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        app:layout_constraintStart_toStartOf="@+id/livingRButton"
+        app:layout_constraintTop_toTopOf="@+id/livingRButton"
+        app:srcCompat="@drawable/room_settings" />
+
+    <ImageView
+        android:id="@+id/livingRImage"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/livingRButton"
+        app:layout_constraintStart_toStartOf="@+id/livingRButton"
+        app:layout_constraintTop_toTopOf="@+id/livingRButton"
+        app:srcCompat="@drawable/living_room" />
+
+    <ImageView
+        android:id="@+id/livingRBulb"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        app:layout_constraintEnd_toEndOf="@+id/livingRButton"
+        app:layout_constraintStart_toStartOf="@+id/livingRButton"
+        app:layout_constraintTop_toBottomOf="@+id/textLivingR"
+        app:srcCompat="@drawable/lightbulb_off" />
+
+    <TextView
+        android:id="@+id/textLivingR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Σαλόνι"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/livingRButton"
+        app:layout_constraintStart_toStartOf="@+id/livingRButton"
+        app:layout_constraintTop_toBottomOf="@+id/livingRImage" />
+
+    <!--                      Bedroom                                   -->
+
+    <ImageButton
+        android:id="@+id/bedroomButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/room_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/livingRButton" />
+
+    <ImageView
+        android:id="@+id/bedroomSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        app:layout_constraintStart_toStartOf="@+id/bedroomButton"
+        app:layout_constraintTop_toTopOf="@+id/bedroomButton"
+        app:srcCompat="@drawable/room_settings" />
+
+    <ImageView
+        android:id="@+id/bedroomImage"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/bedroomButton"
+        app:layout_constraintStart_toStartOf="@+id/bedroomButton"
+        app:layout_constraintTop_toTopOf="@+id/bedroomButton"
+        app:srcCompat="@drawable/bedroom" />
+
+    <ImageView
+        android:id="@+id/bedroomBulb"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        app:layout_constraintEnd_toEndOf="@+id/bedroomButton"
+        app:layout_constraintStart_toStartOf="@+id/bedroomButton"
+        app:layout_constraintTop_toBottomOf="@+id/textBedroom"
+        app:srcCompat="@drawable/lightbulb_off" />
+
+    <TextView
+        android:id="@+id/textBedroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Υπνοδωμάτιο"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/bedroomButton"
+        app:layout_constraintStart_toStartOf="@+id/bedroomButton"
+        app:layout_constraintTop_toBottomOf="@+id/bedroomImage" />
+
+    <!--                      Kitchen                                   -->
+
+    <ImageButton
+        android:id="@+id/kitchenButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/room_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/kitchenSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        app:layout_constraintStart_toStartOf="@+id/kitchenButton"
+        app:layout_constraintTop_toTopOf="@+id/kitchenButton"
+        app:srcCompat="@drawable/room_settings" />
+
+    <ImageView
+        android:id="@+id/kitchenImage"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/kitchenButton"
+        app:layout_constraintStart_toStartOf="@+id/kitchenButton"
+        app:layout_constraintTop_toTopOf="@+id/kitchenButton"
+        app:srcCompat="@drawable/kitchen" />
+
+    <ImageView
+        android:id="@+id/kitchenBulb"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        app:layout_constraintEnd_toEndOf="@+id/kitchenButton"
+        app:layout_constraintStart_toStartOf="@+id/kitchenButton"
+        app:layout_constraintTop_toBottomOf="@+id/textKitchen"
+        app:srcCompat="@drawable/lightbulb_off" />
+
+    <TextView
+        android:id="@+id/textKitchen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Κουζίνα"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/kitchenButton"
+        app:layout_constraintStart_toStartOf="@+id/kitchenButton"
+        app:layout_constraintTop_toBottomOf="@+id/kitchenImage" />
+
+    <!--                      Bathroom                                  -->
+
+    <ImageButton
+        android:id="@+id/bathroomButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/room_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kitchenButton" />
+
+    <ImageView
+        android:id="@+id/bathroomSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        app:layout_constraintStart_toStartOf="@+id/bathroomButton"
+        app:layout_constraintTop_toTopOf="@+id/bathroomButton"
+        app:srcCompat="@drawable/room_settings" />
+
+    <ImageView
+        android:id="@+id/bathroomImage"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/bathroomButton"
+        app:layout_constraintStart_toStartOf="@+id/bathroomButton"
+        app:layout_constraintTop_toTopOf="@+id/bathroomButton"
+        app:srcCompat="@drawable/bathroom" />
+
+    <ImageView
+        android:id="@+id/bathroomBulb"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        app:layout_constraintEnd_toEndOf="@+id/bathroomButton"
+        app:layout_constraintStart_toStartOf="@+id/bathroomButton"
+        app:layout_constraintTop_toBottomOf="@+id/textBathroom"
+        app:srcCompat="@drawable/lightbulb_off" />
+
+    <TextView
+        android:id="@+id/textBathroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Μπάνιο"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/bathroomButton"
+        app:layout_constraintStart_toStartOf="@+id/bathroomButton"
+        app:layout_constraintTop_toBottomOf="@+id/bathroomImage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

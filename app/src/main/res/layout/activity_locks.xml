@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#092E49"
+    tools:context=".Lights">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Κλείδωμα"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_logo" />
+
+    <ImageView
+        android:id="@+id/home_logo"
+        android:layout_width="219dp"
+        android:layout_height="181dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cosmote_smart_home_3" />
+
+    <TextView
+        android:id="@+id/textAllLocks"
+        android:layout_width="148dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/all_lights"
+        android:text="Όλες οι πόρτες"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:thumb="@drawable/switch_thumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:track="@drawable/switch_track" />
+
+    <ImageButton
+        android:id="@+id/radioBackButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gobackarrow" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/question_mark" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Δωμάτια"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAllLocks" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="413dp"
+        android:layout_height="57dp"
+        android:background="@drawable/navigation_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/micImageButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@color/roz"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <ImageButton
+        android:id="@+id/settingsImageButton"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/micImageButton"
+        app:srcCompat="@drawable/settings" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="60dp"
+        android:text="Ρυθμίσεις"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toEndOf="@+id/micImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/settingsImageButton" />
+
+    <ImageButton
+        android:id="@+id/imageView6"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="5dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/micImageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:srcCompat="@drawable/home" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Αρχική"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/micImageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+
+    <!--                      Main Door                               -->
+
+    <ImageButton
+        android:id="@+id/mainDoorButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/room_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/mainDoorSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        app:layout_constraintStart_toStartOf="@+id/mainDoorButton"
+        app:layout_constraintTop_toTopOf="@+id/mainDoorButton"
+        app:srcCompat="@drawable/room_settings" />
+
+    <ImageView
+        android:id="@+id/mainDoorImage"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/mainDoorButton"
+        app:layout_constraintStart_toStartOf="@+id/mainDoorButton"
+        app:layout_constraintTop_toTopOf="@+id/mainDoorButton"
+        app:srcCompat="@drawable/icons8_door_100" />
+
+    <ImageView
+        android:id="@+id/mainDoorLock"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        app:layout_constraintEnd_toEndOf="@+id/mainDoorButton"
+        app:layout_constraintStart_toStartOf="@+id/mainDoorButton"
+        app:layout_constraintTop_toBottomOf="@+id/textMainDoor"
+        app:srcCompat="@drawable/icons8_lock_100" />
+
+    <TextView
+        android:id="@+id/textMainDoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Κεντρική"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/mainDoorButton"
+        app:layout_constraintStart_toStartOf="@+id/mainDoorButton"
+        app:layout_constraintTop_toBottomOf="@+id/mainDoorImage" />
+
+    <!--                      Garage                                   -->
+
+    <ImageButton
+        android:id="@+id/garageButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/room_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainDoorButton" />
+
+    <ImageView
+        android:id="@+id/garageSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        app:layout_constraintStart_toStartOf="@+id/garageButton"
+        app:layout_constraintTop_toTopOf="@+id/garageButton"
+        app:srcCompat="@drawable/room_settings" />
+
+    <ImageView
+        android:id="@+id/garageImage"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/garageButton"
+        app:layout_constraintStart_toStartOf="@+id/garageButton"
+        app:layout_constraintTop_toTopOf="@+id/garageButton"
+        app:srcCompat="@drawable/icons8_garage_door_64" />
+
+    <ImageView
+        android:id="@+id/garageLock"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        app:layout_constraintEnd_toEndOf="@+id/garageButton"
+        app:layout_constraintStart_toStartOf="@+id/garageButton"
+        app:layout_constraintTop_toBottomOf="@+id/textGarage"
+        app:srcCompat="@drawable/icons8_lock_100" />
+
+    <TextView
+        android:id="@+id/textGarage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Γκαράζ"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/garageButton"
+        app:layout_constraintStart_toStartOf="@+id/garageButton"
+        app:layout_constraintTop_toBottomOf="@+id/garageImage" />
+
+    <!--                      Balcony                                 -->
+
+    <ImageButton
+        android:id="@+id/balconyButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/room_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/balconySettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        app:layout_constraintStart_toStartOf="@+id/balconyButton"
+        app:layout_constraintTop_toTopOf="@+id/balconyButton"
+        app:srcCompat="@drawable/room_settings" />
+
+    <ImageView
+        android:id="@+id/balconyImage"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/balconyButton"
+        app:layout_constraintStart_toStartOf="@+id/balconyButton"
+        app:layout_constraintTop_toTopOf="@+id/balconyButton"
+        app:srcCompat="@drawable/icons8_balcony_100" />
+
+    <ImageView
+        android:id="@+id/balconyLock"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        app:layout_constraintEnd_toEndOf="@+id/balconyButton"
+        app:layout_constraintStart_toStartOf="@+id/balconyButton"
+        app:layout_constraintTop_toBottomOf="@+id/textBalcony"
+        app:srcCompat="@drawable/icons8_lock_100" />
+
+    <TextView
+        android:id="@+id/textBalcony"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Μπαλκόνι"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/balconyButton"
+        app:layout_constraintStart_toStartOf="@+id/balconyButton"
+        app:layout_constraintTop_toBottomOf="@+id/balconyImage" />
+
+    <!--                      Back Door                                  -->
+
+    <ImageButton
+        android:id="@+id/backDoorButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/room_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balconyButton" />
+
+    <ImageView
+        android:id="@+id/backDoorSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        app:layout_constraintStart_toStartOf="@+id/backDoorButton"
+        app:layout_constraintTop_toTopOf="@+id/backDoorButton"
+        app:srcCompat="@drawable/room_settings" />
+
+    <ImageView
+        android:id="@+id/backDoorImage"
+        android:layout_width="72dp"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/backDoorButton"
+        app:layout_constraintStart_toStartOf="@+id/backDoorButton"
+        app:layout_constraintTop_toTopOf="@+id/backDoorButton"
+        app:srcCompat="@drawable/icons8_back_door_100" />
+
+    <ImageView
+        android:id="@+id/backDoorLock"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        app:layout_constraintEnd_toEndOf="@+id/backDoorButton"
+        app:layout_constraintStart_toStartOf="@+id/backDoorButton"
+        app:layout_constraintTop_toBottomOf="@+id/textBackDoor"
+        app:srcCompat="@drawable/icons8_lock_100" />
+
+    <TextView
+        android:id="@+id/textBackDoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Πίσω"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/backDoorButton"
+        app:layout_constraintStart_toStartOf="@+id/backDoorButton"
+        app:layout_constraintTop_toBottomOf="@+id/backDoorImage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
